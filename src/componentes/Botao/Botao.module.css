@@ -1,0 +1,32 @@
+.botao {
+  background-color: #38a169;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.botao:hover {
+  background-color: #66C59B; 
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .botao {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .botao {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+

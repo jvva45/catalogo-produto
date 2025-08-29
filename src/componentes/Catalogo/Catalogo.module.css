@@ -1,0 +1,60 @@
+/* Estilos gerais para o input (genérico) */
+.inputcontainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 115%;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+  font-size: 18px; /* Ajuste o tamanho do ícone */
+  color: #0073e6; /* Cor do ícone */
+}
+
+input {
+  padding: 10px 10px 10px 30px; /* Mais espaço à esquerda para o ícone */
+  font-size: 16px;
+  width: 100%; /* Ocupa todo o espaço disponível */
+  border: 1px solid #ddd; /* Borda padrão */
+  border-radius: 5px;
+  transition: border 0.2s;
+
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+input:focus {
+  border-color: #0073e6; /* Cor de borda padrão quando focado */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .inputcontainer {
+    width: 100%; /* Ocupa toda a largura disponível em telas menores */
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  input {
+    padding: 8px 8px 8px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 14px;
+  }
+
+  input {
+    padding: 6px 6px 6px 24px;
+    font-size: 12px;
+  }
+}
+
+

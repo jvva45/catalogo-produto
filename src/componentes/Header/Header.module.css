@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 12px 20px;
+  background-color: #fff;
+  
+font-family: "Mozilla Headline", sans-serif;
+}
+
+
+
+.logo {
+  height: 55px;
+  object-fit: contain;
+}
+
+/* Coluna central */
+.center {
+  flex: 0 1 600px; /* largura máxima da coluna central */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center; /* centraliza dentro do espaço */
+  margin: 0 30px;
+}
+
+/* Botão categorias + seta */
+.center nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.center nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 20px;
+
+  font-weight: 400px;
+}
+
+.center nav a:hover {
+  color: #1d71b8;
+}
+
+/* Barra de busca */
+.center input {
+  flex: 1; /* O input ocupa o espaço restante dentro do .center */
+  min-width: 200px;
+  border-radius: 30px;
+  font-size: 1rem;
+  border: 1px solid #1d71b8; /* Borda inicial azul */
+  transition: border 0.2s;
+  outline: none; /* Remove o contorno também aqui */
+}
+
+/* Borda ao focar no input dentro de .center */
+.center input:focus {
+  border-color: #1d71b8; /* Cor da borda mais escura ao focar */
+}
+
+/* Coluna direita - usuário */
+
+/* Linha abaixo do header */
+.line {
+  width: 100%;
+  padding: 10px;
+  background-color: #1d71b8; /* Cor azul */
+  border: none;
+  margin-top: 10px;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Empilha os itens em telas menores */
+    padding: 10px;
+  }
+
+  .logo {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .center {
+    flex-direction: column; /* Empilha os itens do centro */
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .center nav {
+    margin-bottom: 10px;
+  }
+
+  .center input {
+    min-width: unset; /* Remove o min-width para se ajustar melhor */
+    width: 90%; /* Ocupa mais largura */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 40px;
+  }
+
+  .center nav a {
+    font-size: 18px;
+  }
+
+  .center input {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+

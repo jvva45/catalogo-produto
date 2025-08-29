@@ -1,0 +1,231 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&display=swap");
+
+.rodape {
+  background-color: #e6f2ff; /* Azul claro para o rodapé */
+  color: #222;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ---- Benefícios ---- */
+.beneficios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  
+}
+
+.beneficio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 250px;
+}
+
+.icone {
+  color: #003366; /* Azul escuro */
+  font-size: 2.2rem;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  
+}
+
+.texto {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.destaque {
+  color: #003366; /* Azul escuro */
+  
+}
+
+/* ---- Links ---- */
+.linksContainer {
+  display: flex;
+  justify-content: center; /* Centraliza as colunas */
+  flex-wrap: wrap;
+  gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.coluna {
+  min-width: 180px;
+  
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #003366; /* Azul escuro */
+}
+
+.link {
+  display: block;
+  color: #555;
+  margin: 6px 0;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: #003366; /* Azul escuro para o hover */
+  transform: translateX(3px);
+}
+
+/* ---- Central de Vendas ---- */
+.centralVendas {
+  margin-top: 15px;
+}
+
+.centralVendas .texto {
+  font-weight: 600;
+  color: #003366; /* Azul escuro */
+}
+
+/* ---- Redes Sociais ---- */
+.redesSociais {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.rede {
+  color: #555;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.rede:hover {
+  color: #003366; /* Azul escuro */
+  transform: scale(1.2);
+}
+
+/* ---- Copyright ---- */
+.copy {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+/* ---- Responsividade ---- */
+@media (max-width: 992px) {
+  .linksContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .beneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linksContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coluna {
+    margin-bottom: 25px;
+  }
+
+  .redesSociais {
+    justify-content: center;
+  }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .rodape {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .beneficio {
+    max-width: 100%;
+  }
+
+  .icone {
+    font-size: 1.8rem;
+  }
+
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .texto {
+    font-size: 0.85rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+
+  .rede {
+    font-size: 1.2rem;
+  }
+
+  .copy {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rodape {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .icone {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 0.9rem;
+  }
+
+  .texto {
+    font-size: 0.8rem;
+  }
+
+  .subtitulo {
+    font-size: 0.9rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+
+  .rede {
+    font-size: 1rem;
+  }
+
+  .copy {
+    font-size: 0.7rem;
+  }
+}
+
+

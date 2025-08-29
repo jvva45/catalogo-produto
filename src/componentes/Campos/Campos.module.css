@@ -1,0 +1,59 @@
+/* src/components/Campo/Campo.css */
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #003366;
+}
+
+.campo input {
+  background: #f2f2f2;
+  color: #4a4a4a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.campo input:focus {
+  outline: none;
+   border-color: #1F73E8; /* Foco azul para destaque */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .campo label {
+    font-size: 14px;
+  }
+
+  .campo input {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .campo label {
+    font-size: 12px;
+  }
+
+  .campo input {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+

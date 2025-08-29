@@ -1,0 +1,13 @@
+:root {
+  --fonte-titulos: 'Bebas Neue', sans-serif;
+  --fonte-textos: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, nav a {
+  font-family: var(--fonte-titulos);
+  letter-spacing: 1px;
+}
+
+body, p, span {
+  font-family: var(--fonte-textos);
+}

@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 20px;
+  background-color: #F2F4F9;
+  height: 100vh;
+  
+}
+
+/* Área do formulário à esquerda */
+.formularioWrapper {
+  flex: 1;
+  max-width: 400px;
+  
+  
+}
+
+/* Área da busca e catálogo à direita */
+.catalogoWrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,  max-content));
+  gap: 20px;
+  padding: 20px 0;
+  align-items: stretch; /* Garante que todos os cards tenham a mesma altura */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Altera para coluna em telas menores */
+    align-items: center;
+    padding: 10px;
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+  }
+
+  .formularioWrapper {
+    max-width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+
+  .catalogoWrapper {
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+
+  .produtos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta o grid para telas menores */
+    justify-content: center; /* Centraliza os cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .produtos {
+    grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+  }
+}
+
+

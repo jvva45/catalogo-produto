@@ -1,0 +1,13 @@
+#root { /* Ou a classe que você usa para o contêiner principal, ex: .App */
+  display: flex;
+  flex-direction: column; /* Para que o cabeçalho, conteúdo e rodapé se empilhem */
+  min-height: 100vh; /* Garante que o contêiner principal ocupe a altura total da tela */
+  width: 100%; /* Garante que o contêiner principal ocupe a largura total */
+  /* Você pode adicionar um padding aqui se quiser um espaço nas laterais */
+  /* padding: 0 20px; */
+}
+
+body {
+  margin: 0;
+ 
+}

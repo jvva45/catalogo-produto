@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&display=swap");
+
+.produto {
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 380px; /* Altura fixa para todos os cards */
+  font-weight: 400;
+  max-width: 265.92px;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação no hover */
+}
+
+/* Hover do card */
+.produto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem do produto */
+.produto img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom suave na imagem */
+.produto img:hover {
+  transform: scale(1.05);
+}
+
+/* Nome do produto */
+.produto h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  flex-grow: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800; /* ExtraBold geralmente é 800 */
+}
+
+/* Preço à vista */
+.precoVista {
+  font-size: 1.3rem;
+  color: #2d6cdf; /* Azul vibrante */
+  font-weight: bold;
+  margin: 8px 0 4px 0;
+  display: block;
+}
+
+/* Descrição */
+.produto p {
+  font-size: 0.9rem;
+  color: #666;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  border-bottom: 1px solid #e0e0e0; /* Divider */
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; /* Light */
+}
+
+/* Botão */
+.produto button {
+  background-color: #1d71b8;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  width: 100%; /* ocupa largura total */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* espaço caso adicione ícone */
+}
+
+/* Hover no botão */
+.produto button:hover {
+  background-color: #155a92; /* tom mais escuro para hover */
+  transform: translateY(-2px); /* efeito sutil de elevação */
+}
+
+/* Estilos para o caso de não haver imagem */
+.produto img[src=""] {
+  display: none;
+}
+
+/* Estilos para o caso de não haver descrição */
+.produto p:empty {
+  display: none;
+}
+
+.precos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .produto {
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    padding: 10px;
+  }
+
+  .produto h1 {
+    font-size: 1.1rem;
+  }
+
+  .precoVista {
+    font-size: 1.2rem;
+  }
+
+  .produto p {
+    font-size: 0.8rem;
+  }
+
+  .produto button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .produto h1 {
+    font-size: 1rem;
+  }
+
+  .precoVista {
+    font-size: 1.1rem;
+  }
+
+  .produto p {
+    font-size: 0.7rem;
+  }
+
+  .produto button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "nome": "Camiseta Básica",
+    "descricao": "Camiseta de algodão 100% com gola redonda.",
+    "preco": 39.9,
+    "categoria": "Vestuário",
+    "imagem": "/assets/camiseta.png"
+  },
+  {
+    "id": 2,
+    "nome": "Tênis Esportivo",
+    "descricao": "Confortável e ideal para corrida.",
+    "preco": 199.9,
+    "categoria": "Calçados",
+    "imagem": "/assets/tenis_esportivo.png"
+  },
+  {
+    "id": 3,
+    "nome": "Fone Bluetooth",
+    "descricao": "Fone sem fio com cancelamento de ruído.",
+    "preco": 149.9,
+    "categoria": "Eletrônicos",
+    "imagem": "/assets/fone.png"
+  },
+  {
+    "id": 4,
+    "nome": "Mochila Escolar",
+    "descricao": "Mochila com divisórias para notebook.",
+    "preco": 89.9,
+    "categoria": "Acessórios",
+    "imagem": "/assets/mochila.png"
+  },
+  {
+    "id": 5,
+    "nome": "Relógio Digital",
+    "descricao": "Relógio à prova d'água com cronômetro.",
+    "preco": 79.9,
+    "categoria": "Acessórios",
+    "imagem": "/assets/relogio_digital.png"
+  },
+  {
+    "id": 6,
+    "nome": "Cafeteira Elétrica",
+    "descricao": "Faz até 15 xícaras com timer programável.",
+    "preco": 129.9,
+    "categoria": "Eletrodomésticos",
+    "imagem": "/assets/cafeteira_eletrica.png"
+  },
+  {
+    "id": 7,
+    "nome": "Jaqueta Jeans",
+    "descricao": "Jaqueta de jeans estilosa e confortável.",
+    "preco": 129.9,
+    "categoria": "Vestuário",
+    "imagem": "/assets/jaqueta_jeans.png"
+  },
+  {
+    "id": 8,
+    "nome": "Sandália Casual",
+    "descricao": "Sandália leve e resistente para o dia a dia.",
+    "preco": 89.9,
+    "categoria": "Calçados",
+    "imagem": "/assets/sandalia_casual.png"
+  },
+  {
+    "id": 9,
+    "nome": "Mouse Sem Fio",
+    "descricao": "Mouse ergonômico e silencioso.",
+    "preco": 69.9,
+    "categoria": "Eletrônicos",
+    "imagem": "/assets/mouse_sem_fio.png"
+  },
+  {
+    "id": 10,
+    "nome": "Boné Snapback",
+    "descricao": "Boné ajustável com aba reta.",
+    "preco": 49.9,
+    "categoria": "Acessórios",
+    "imagem": "/assets/bone_snapback.png"
+  },
+  {
+    "id": 11,
+    "nome": "Liquidificador",
+    "descricao": "Liquidificador potente com 3 velocidades.",
+    "preco": 99.9,
+    "categoria": "Eletrodomésticos",
+    "imagem": "/assets/liquidificador.png"
+  },
+  {
+    "id": 12,
+    "nome": "Camiseta Polo",
+    "descricao": "Camiseta polo confortável e moderna.",
+    "preco": 59.9,
+    "categoria": "Vestuário",
+    "imagem": "/assets/camiseta_polo.png"
+  },
+  {
+    "id": 13,
+    "nome": "Tênis Casual",
+    "descricao": "Tênis confortável para uso diário.",
+    "preco": 149.9,
+    "categoria": "Calçados",
+    "imagem": "/assets/tenis_casual.png"
+  },
+  {
+    "id": 14,
+    "nome": "Fone de Ouvido Gamer",
+    "descricao": "Fone com microfone e som surround.",
+    "preco": 199.9,
+    "categoria": "Eletrônicos",
+    "imagem": "/assets/fone_gamer.png"
+  }
+]
