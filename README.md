@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+🛍️ Catálogo de Produtos – Projeto de Aprendizado em React com TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de catálogo de produtos desenvolvido como parte do processo de aprendizado em React, TypeScript e desenvolvimento front-end.
+O objetivo principal foi aplicar conceitos fundamentais dessas tecnologias para construir uma aplicação funcional e bem estruturada.
 
-Currently, two official plugins are available:
+  ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    🏷️ Listagem de Produtos:
+    Exibe uma lista de produtos com informações como nome, descrição, preço e imagem.
 
-## Expanding the ESLint configuration
+    🗂️ Filtros de Categoria:
+    Permite filtrar os produtos por diferentes categorias: Vestuário, Calçados, Eletrônicos, Acessórios e Eletrodomésticos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+    💰 Filtro por Preço:
+    Possibilita filtrar os produtos por faixa de preço utilizando um slider.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+    🔍 Barra de Busca:
+    Funcionalidade de busca para encontrar produtos específicos pelo nome.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+    🔧 Componentes Reutilizáveis:
+    Estrutura de componentes modularizada para facilitar a manutenção e reusabilidade.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    📱 Design Responsivo:
+    Layout adaptável para proporcionar uma experiência de usuário otimizada em desktops, tablets e smartphones.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🛠️ Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  ⚛️ React: Biblioteca JavaScript para construção de interfaces de usuário.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  🟦 TypeScript: Superset do JavaScript que adiciona tipagem estática, melhorando a robustez e manutenibilidade do código.
+
+  🎨 CSS Modules: Para encapsulamento de estilos, evitando conflitos e facilitando a organização do CSS.
+
+  ⚡ Vite: Ferramenta de build rápida para projetos front-end.
+
+  ✅ ESLint: Para garantir a qualidade do código e seguir padrões de desenvolvimento.
+
